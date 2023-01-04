@@ -18,6 +18,16 @@ body h3 {
   font-size: 1.25em;
 }
 
+body a {
+	text-decoration: underline;
+	color: #333;
+}
+
+body a:hover {
+	color: #2e2e2e;
+  text-decoration: none;
+}
+
 .header {
 	display: flex;
 	align-items: center;
@@ -68,29 +78,19 @@ body h3 {
 	padding: 20px;
 }
 
-.about a {
-	text-decoration: underline;
-	color: #333;
-}
-
-.about a:hover {
-	color: #2e2e2e;
-  text-decoration: none;
-}
-
 .footer {
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+  justify-content: space-between;
 	background-color: #333;
 	color: #fff;
 	height: 50px;
 	padding: 0 40px;
-	
+  font-size: 0.8em;
 }
 
 .footer button {
-	border: none;
+  border: none;
 	background: transparent;
 	cursor: pointer;
 }
@@ -102,6 +102,19 @@ body h3 {
 
 .footer button.dark-mode i {
 	color: #fff;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #mode-icon {
@@ -136,12 +149,12 @@ body h3 {
 	color: #ededed;
 }
 
-.dark-mode .about a {
+.dark-mode a {
 	text-decoration: underline;
 	color: #ededed;
 }
 
-.dark-mode .about a:hover {
+.dark-mode a:hover {
 	color: #ededed;
   text-decoration: none;
 }
@@ -159,9 +172,13 @@ body h3 {
 	margin: 0 0 20px 0;
 }
 
+.video-section p {
+	margin: 0 0 20px 0;
+}
+
 .video-section iframe {
 	width: 100%;
-	height: auto;
+	aspect-ratio: 16 / 9;
 	max-width: 500px;
 	border: none;
 }
