@@ -10,23 +10,23 @@
 	<script src="script.js"></script>
 	
 	<!-- Metadata -->
-	<meta name="description" content="A simple one-page personal website with a section for social links and a blurb about myself.">
-	<meta name="keywords" content="personal website, social links, about me">
-	
-	<!-- Google Analytics Tracking Code -->
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	<meta name="description" content="Will Bewley's personal website. Co-founder & CEO of Woflow. Built by ChatGPT">
+	<meta name="keywords" content="Will Bewley, Woflow, personal website, Will Bewley LinkedIn, Will Bewley Twitter, about me, ChatGPT">
 
-		ga('create', 'your-tracking-id', 'auto');
-		ga('send', 'pageview');
-	</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82778216-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82778216-1');
+</script>
+
 </head>
 <body onload="setLightMode()">
 	<div class="header">
-		<h1>Will Bewley</h1>
+		<h1 class="unselectable">Will Bewley</h1>
 	</div>
    <div class="container">
 	<div class="main">
@@ -42,14 +42,16 @@
 	</div>
 	<div class="video-section">
 	<h2>How this site was made using ChatGPT</h2>
-	<p>I decided to update my personal website by playing around with ChatGPT. I spent about 20 minutes making this website, and host it simply on Github using Github pages for free.</p> <p>Check out the repo if you're interested as well as this short video:</p>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/eNK1LnYwoBc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<p>I decided to update my personal website by playing around with ChatGPT. I spent about 20 minutes making this website, and host it simply using Github pages for free.</p> <p>Check out the <a href="https://github.com/bewley/bewley.github.io" target="_blank">repo</a> if you're interested as well as this short video:</p>
+	<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/eNK1LnYwoBc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
     </div>
 	<div class="footer">
 		<button onclick="toggleDarkMode()">
 			<i class="far fa-moon" id="mode-icon"></i>
 		</button>
+    <p class="copyright">Will Bewley, 2023</p>
+    <h3 class=unselectable>WMAB</h3>
 	</div>
 </body>
 </html>
