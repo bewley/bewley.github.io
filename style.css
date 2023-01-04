@@ -1,0 +1,173 @@
+body {
+	font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+  background-color: #FDFDF5;
+}
+
+body h1 {
+  font-size: 2em;
+}
+
+body h2 {
+  font-size: 1.5em;
+}
+
+body h3 {
+  font-size: 1.25em;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #333;
+	color: #fff;
+	height: 50px;
+	padding: 20px 5%;
+}
+
+.header h1 {
+	margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+  width: 80%;
+  padding: 20px 5%;
+  text-align: left;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 20px;
+}
+
+.main h2 {
+	margin: 0;
+}
+
+.main img {
+	border-radius: 5%;
+	margin-bottom: 20px;
+  max-width: 200px;
+}
+
+#shadow {
+      --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+}
+
+.about {
+	padding: 20px;
+}
+
+.about a {
+	text-decoration: underline;
+	color: #333;
+}
+
+.about a:hover {
+	color: #2e2e2e;
+  text-decoration: none;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	background-color: #333;
+	color: #fff;
+	height: 50px;
+	padding: 0 40px;
+	
+}
+
+.footer button {
+	border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.footer button i {
+	font-size: 18px;
+  line-height: 20px;
+}
+
+.footer button.dark-mode i {
+	color: #fff;
+}
+
+#mode-icon {
+  color: white;
+}
+
+#mode-icon:hover {
+  color: #bbb;
+}
+
+.dark-mode {
+	background-color: #333;
+	color: #fff;
+}
+
+.dark-mode p {
+	background-color: #333;
+	color: #ededed;
+}
+
+.dark-mode .header {
+	background-color: #333;
+	color: #fff;
+}
+
+.dark-mode .footer {
+	background-color: #333;
+	color: #fff;
+}
+
+.dark-mode .about {
+	color: #ededed;
+}
+
+.dark-mode .about a {
+	text-decoration: underline;
+	color: #ededed;
+}
+
+.dark-mode .about a:hover {
+	color: #ededed;
+  text-decoration: none;
+}
+
+.video-section {
+	padding: 20px;
+	text-align: left;
+}
+
+.video-section h2 {
+	margin: 0 0 20px 0;
+}
+
+.video-section p {
+	margin: 0 0 20px 0;
+}
+
+.video-section iframe {
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	border: none;
+}
+
+@media (max-width: 600px) {
+  .main img {
+    max-width: 100%;
+  }
+}
