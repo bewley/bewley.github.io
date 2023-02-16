@@ -31,11 +31,30 @@ body a:hover {
 .header {
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+  justify-content: space-between;
 	background-color: #333;
 	color: #fff;
 	height: 50px;
 	padding: 20px 5%;
+}
+
+.header button {
+  border: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.header button i {
+	font-size: 18px;
+  line-height: 20px;
+}
+
+.header button.dark-mode i {
+	color: #fff;
+}
+
+.header p {
+  text-align: center;
 }
 
 .header h1 {
@@ -87,21 +106,6 @@ body a:hover {
 	height: 50px;
 	padding: 0 40px;
   font-size: 0.8em;
-}
-
-.footer button {
-  border: none;
-	background: transparent;
-	cursor: pointer;
-}
-
-.footer button i {
-	font-size: 18px;
-  line-height: 20px;
-}
-
-.footer button.dark-mode i {
-	color: #fff;
 }
 
 .footer p {
